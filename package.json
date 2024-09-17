@@ -1,4 +1,5 @@
 {
+  "homepage": "https://UtonyDev/github.io/vite-calc-app/",
   "name": "vite-calc",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "mathjs": "^13.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
